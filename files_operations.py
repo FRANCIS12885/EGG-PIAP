@@ -36,7 +36,7 @@ def POW_from_csv(main_dic, happy_present, cols):
     outputDirectoryML = main_dic + "\\ML_FQ"
     # Pobranie wszystkich plików CSV w folderze
     allFiles = glob.glob('**/*.csv', recursive=True)
-    print(allFiles)
+    #print(allFiles)
 
     tp = 5
     tk = 25

@@ -9,8 +9,9 @@ import os, pickle
 import numpy as np
 import joblib
 
+
 selfDirectory = os.getcwd()
-picklesDirectory = "C:\\Users\\Franek\\Documents\\Praktyki\\EEG kod\\pickles"
+picklesDirectory = os.path.abspath(os.path.dirname(__file__)) + "\\pickles"
 
 
 def knn_fq(data, target_col, cols, k, export, happy_present, ts, display):

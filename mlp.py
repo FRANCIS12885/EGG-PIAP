@@ -12,7 +12,7 @@ import numpy as np
 import pickle, os, joblib
 
 selfDirectory = os.getcwd()
-picklesDirectory = "C:\\Users\\Franek\\Documents\\Praktyki\\EEG kod\\pickles"
+picklesDirectory = os.path.abspath(os.path.dirname(__file__)) + "\\pickles"
 
 
 def baseline_model(in_nr, out_nr):

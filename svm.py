@@ -9,7 +9,7 @@ from sklearn.preprocessing import StandardScaler
 
 
 selfDirectory = os.getcwd()
-picklesDirectory = "C:\\Users\\Franek\\Documents\\Praktyki\\EEG kod\\pickles"
+picklesDirectory = os.path.abspath(os.path.dirname(__file__)) + "\\pickles"
 
 
 def svm_fq(data, target_col, cols, export, happy_present, ts, display):
